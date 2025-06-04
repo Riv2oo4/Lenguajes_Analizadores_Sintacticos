@@ -1,0 +1,20 @@
+
+let delim = [' ''\t''\n']
+let ws = delim+
+let digit = ["0123456789"]
+let letter = ['A'-'Z''a'-'z']
+let digits = digit+
+let id = letter(letter|digit)*
+let number = digits('.'digits)?('E'['+''-']?digits)?
+
+rule tokens = 
+    ws        { return WHITESPACE }  
+  | number    { return NUMBER }
+  | '+'       { return PLUS }
+  | '*'       { return TIMES }
+  | '('       { return LPAREN }
+  | ')'       { return RPAREN }
+  | '-'       { return MINUS }
+  | '/'       { return DIV }
+
+(* Introducir cualquier trailer aqui *)

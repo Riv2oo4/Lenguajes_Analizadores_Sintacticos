@@ -1,0 +1,59 @@
+NUMBER          3.14
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          2
+WHITESPACE       
+TIMES           *
+WHITESPACE       
+NUMBER          5
+SEMICOLON       ;
+WHITESPACE      
+
+LPAREN          (
+NUMBER          10
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          5
+RPAREN          )
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          3.5
+SEMICOLON       ;
+WHITESPACE      
+
+NUMBER          2.5E+3
+WHITESPACE       
+TIMES           *
+WHITESPACE       
+NUMBER          7
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          1.2E-4
+SEMICOLON       ;
+WHITESPACE      
+
+NUMBER          42
+SEMICOLON       ;
+WHITESPACE      
+
+LPAREN          (
+WHITESPACE       
+LPAREN          (
+WHITESPACE       
+NUMBER          100
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          50
+WHITESPACE       
+RPAREN          )
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          0.5
+WHITESPACE       
+RPAREN          )

@@ -1,0 +1,160 @@
+ID              x
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+NUMBER          5
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          3
+WHITESPACE       
+TIMES           *
+WHITESPACE       
+NUMBER          2
+SEMICOLON       ;
+WHITESPACE      
+
+ID              y
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+LPAREN          (
+NUMBER          10
+WHITESPACE       
+MINUS           -
+WHITESPACE       
+NUMBER          4
+RPAREN          )
+WHITESPACE       
+DIV             /
+WHITESPACE       
+NUMBER          2
+SEMICOLON       ;
+WHITESPACE      
+
+ID              result
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+ID              x
+WHITESPACE       
+LT              <
+WHITESPACE       
+ID              y
+SEMICOLON       ;
+WHITESPACE      
+
+ID              flag
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+ID              x
+WHITESPACE       
+EQ              =
+WHITESPACE       
+ID              y
+SEMICOLON       ;
+WHITESPACE      
+
+ID              a
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+NUMBER          10
+SEMICOLON       ;
+WHITESPACE       
+ID              b
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+NUMBER          20
+SEMICOLON       ;
+WHITESPACE       
+ID              c
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+ID              a
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+ID              b
+SEMICOLON       ;
+WHITESPACE      
+
+ID              var1
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+NUMBER          3.14E-2
+SEMICOLON       ;
+WHITESPACE       
+ID              var2
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+NUMBER          100
+WHITESPACE       
+TIMES           *
+WHITESPACE       
+ID              var1
+SEMICOLON       ;
+WHITESPACE      
+
+ID              complex
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+LPAREN          (
+ID              x
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+ID              y
+RPAREN          )
+WHITESPACE       
+TIMES           *
+WHITESPACE       
+LPAREN          (
+ID              a
+WHITESPACE       
+MINUS           -
+WHITESPACE       
+ID              b
+RPAREN          )
+SEMICOLON       ;
+WHITESPACE      
+
+ID              nested
+WHITESPACE       
+ASSIGNOP        :=
+WHITESPACE       
+LPAREN          (
+LPAREN          (
+NUMBER          5
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          3
+RPAREN          )
+WHITESPACE       
+TIMES           *
+WHITESPACE       
+NUMBER          2
+RPAREN          )
+WHITESPACE       
+LT              <
+WHITESPACE       
+LPAREN          (
+NUMBER          10
+WHITESPACE       
+DIV             /
+WHITESPACE       
+LPAREN          (
+NUMBER          1
+WHITESPACE       
+PLUS            +
+WHITESPACE       
+NUMBER          1
+RPAREN          )
+RPAREN          )

@@ -1,0 +1,122 @@
+
+----- 2025-06-04 02:50:50 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 136, in run
+    self.grammar = Grammar(path)
+                   ~~~~~~~^^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 44, in __init__
+    self._compute_follow_sets()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 136, in _compute_follow_sets
+    trailer = set(self.FIRST[symbol])
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'number'
+
+
+----- 2025-06-04 02:53:15 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 136, in run
+    self.grammar = Grammar(path)
+                   ~~~~~~~^^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 44, in __init__
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 136, in _compute_follow_sets
+    # Para cada terminal, FIRST(terminal) = {terminal}
+KeyError: 'number'
+
+
+----- 2025-06-04 02:53:50 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 138, in run
+    self.table = SLRTable(self.automaton, self.grammar)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parse_table.py", line 120, in __init__
+    self._build_tables()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parse_table.py", line 144, in _build_tables
+    raise Exception(f"Shift/shift or shift/reduce conflict at state {idx}, symbol {nxt}. Existing: {existing}")
+Exception: Shift/shift or shift/reduce conflict at state 0, symbol number. Existing: ('shift', 2)
+
+
+----- 2025-06-04 03:00:58 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 138, in run
+    self.table = SLRTable(self.automaton, self.grammar)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parse_table.py", line 120, in __init__
+    self._build_tables()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parse_table.py", line 144, in _build_tables
+    raise Exception(f"Shift/shift or shift/reduce conflict at state {idx}, symbol {nxt}. Existing: {existing}")
+Exception: Shift/shift or shift/reduce conflict at state 0, symbol number. Existing: ('shift', 2)
+
+
+----- 2025-06-04 03:06:42 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 136, in run
+    self.grammar = Grammar(path)
+                   ~~~~~~~^^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 46, in __init__
+    self._parse_yalp(raw)
+    ~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 65, in _parse_yalp
+    raise GrammarError("No se encontró el separador '%%' en el archivo de gramática.")
+grammar_reader.GrammarError: No se encontró el separador '%%' en el archivo de gramática.
+
+
+----- 2025-06-04 03:07:35 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 138, in run
+    self.table = SLRTable(self.automaton, self.grammar)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parse_table.py", line 120, in __init__
+    self._build_tables()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parse_table.py", line 144, in _build_tables
+    raise Exception(f"Shift/shift or shift/reduce conflict at state {idx}, symbol {nxt}. Existing: {existing}")
+Exception: Shift/shift or shift/reduce conflict at state 4, symbol SEMICOLON. Existing: ('shift', 7)
+
+
+----- 2025-06-04 03:17:04 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 136, in run
+    self.grammar = Grammar(path)
+                   ~~~~~~~^^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 46, in __init__
+    self._parse_yalp(raw)
+    ~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\grammar_reader.py", line 65, in _parse_yalp
+    raise GrammarError("No se encontró el separador '%%' en el archivo de gramática.")
+grammar_reader.GrammarError: No se encontró el separador '%%' en el archivo de gramática.
+
+
+----- 2025-06-03 21:36:43 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 219, in run
+    tree = parser.parse(sub_with_eof)
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parser.py", line 43, in parse
+    raise ParseError(f"Unexpected token {lookahead!r} at state {current_state}")
+error_handling.ParseError: Unexpected token 'NUMBER' at state 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 222, in run
+    raise ParseError(f"Error al parsear expresión #{i}: {e}")
+error_handling.ParseError: Error al parsear expresión #1: Unexpected token 'NUMBER' at state 0
+
+
+----- 2025-06-03 21:38:59 -----
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 219, in run
+    tree = parser.parse(sub_with_eof)
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\Fase_Sintactico\parser.py", line 43, in parse
+    raise ParseError(f"Unexpected token {lookahead!r} at state {current_state}")
+error_handling.ParseError: Unexpected token '$' at state 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Eduar\OneDrive\Documentos\DLP\proyecto 2\main_integrado.py", line 222, in run
+    raise ParseError(f"Error al parsear expresión #{i}: {e}")
+error_handling.ParseError: Error al parsear expresión #1: Unexpected token '$' at state 2
+
